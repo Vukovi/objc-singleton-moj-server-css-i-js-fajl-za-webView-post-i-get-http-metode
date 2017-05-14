@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xc2-uL-1QR"/>
+                        <viewControllerLayoutGuide type="bottom" id="0wn-LM-XFJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7s9-m3-gf4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeZ-4p-z8l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="sHl-p1-dkp"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z0y-ie-8bw">
+                                <rect key="frame" x="16" y="38" width="343" height="629"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="main" rowHeight="104" id="EiH-YV-q1x" customClass="VideoCell">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EiH-YV-q1x" id="vcT-dn-rhB">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="104"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-mA-1oM">
+                                                    <rect key="frame" x="8" y="8" width="327" height="88"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bDP-Cl-xJs">
+                                                            <rect key="frame" x="8" y="8" width="126" height="72"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="126" id="CuO-R3-Gr3"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Support High Resolution on iOS - @1x @2x @3x" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-3K-9g4">
+                                                            <rect key="frame" x="142" y="8" width="177" height="34"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="XSa-jY-KgY"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIg-Vg-KDW">
+                                                            <rect key="frame" x="142" y="50" width="177" height="30"/>
+                                                            <string key="text">Learn how to make a professional logo in Photoshop without any design experience. This is a Photoshop tutorial for beginners that will give you all the basics of Photoshop that you need to make a logo.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="OIg-Vg-KDW" firstAttribute="leading" secondItem="bDP-Cl-xJs" secondAttribute="trailing" constant="8" id="C2b-85-8fa"/>
+                                                        <constraint firstItem="OIg-Vg-KDW" firstAttribute="top" secondItem="sxy-3K-9g4" secondAttribute="bottom" constant="8" id="eZj-U5-gVu"/>
+                                                        <constraint firstAttribute="bottom" secondItem="OIg-Vg-KDW" secondAttribute="bottom" constant="8" id="fIF-32-wv5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bDP-Cl-xJs" secondAttribute="bottom" constant="8" id="hvz-XH-5No"/>
+                                                        <constraint firstItem="bDP-Cl-xJs" firstAttribute="top" secondItem="vX0-mA-1oM" secondAttribute="top" constant="8" id="i0P-2G-vd2"/>
+                                                        <constraint firstItem="bDP-Cl-xJs" firstAttribute="leading" secondItem="vX0-mA-1oM" secondAttribute="leading" constant="8" id="iIV-zg-6AT"/>
+                                                        <constraint firstItem="sxy-3K-9g4" firstAttribute="top" secondItem="vX0-mA-1oM" secondAttribute="top" constant="8" id="kge-Q0-1TH"/>
+                                                        <constraint firstItem="sxy-3K-9g4" firstAttribute="leading" secondItem="bDP-Cl-xJs" secondAttribute="trailing" constant="8" id="sT7-9O-0d2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OIg-Vg-KDW" secondAttribute="trailing" constant="8" id="w65-Uc-RyQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sxy-3K-9g4" secondAttribute="trailing" constant="8" id="zsd-G9-Sc9"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="vX0-mA-1oM" firstAttribute="top" secondItem="vcT-dn-rhB" secondAttribute="topMargin" id="A88-eT-MAA"/>
+                                                <constraint firstItem="vX0-mA-1oM" firstAttribute="bottom" secondItem="vcT-dn-rhB" secondAttribute="bottomMargin" id="Hv8-Ng-ubL"/>
+                                                <constraint firstItem="vX0-mA-1oM" firstAttribute="leading" secondItem="vcT-dn-rhB" secondAttribute="leadingMargin" id="YFh-ZZ-D28"/>
+                                                <constraint firstItem="vX0-mA-1oM" firstAttribute="trailing" secondItem="vcT-dn-rhB" secondAttribute="trailingMargin" id="hhZ-Pd-FnP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="cellView" destination="vX0-mA-1oM" id="qeC-AY-ec8"/>
+                                            <outlet property="descLbl" destination="OIg-Vg-KDW" id="Rk6-aS-uAi"/>
+                                            <outlet property="thumbImg" destination="bDP-Cl-xJs" id="Fi8-14-ZsJ"/>
+                                            <outlet property="titleLbl" destination="sxy-3K-9g4" id="eKb-yr-A6e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z0y-ie-8bw" firstAttribute="top" secondItem="Xc2-uL-1QR" secondAttribute="bottom" constant="18" id="57G-nC-B1h"/>
+                            <constraint firstItem="aeZ-4p-z8l" firstAttribute="leading" secondItem="7s9-m3-gf4" secondAttribute="leading" id="Gxm-bv-ihM"/>
+                            <constraint firstItem="Z0y-ie-8bw" firstAttribute="bottom" secondItem="0wn-LM-XFJ" secondAttribute="top" id="VfT-VB-a4e"/>
+                            <constraint firstItem="Z0y-ie-8bw" firstAttribute="leading" secondItem="7s9-m3-gf4" secondAttribute="leadingMargin" id="Wim-0F-cIU"/>
+                            <constraint firstItem="aeZ-4p-z8l" firstAttribute="top" secondItem="7s9-m3-gf4" secondAttribute="top" id="fL8-3o-9eT"/>
+                            <constraint firstItem="Z0y-ie-8bw" firstAttribute="trailing" secondItem="7s9-m3-gf4" secondAttribute="trailingMargin" id="imi-tg-86A"/>
+                            <constraint firstAttribute="trailing" secondItem="aeZ-4p-z8l" secondAttribute="trailing" id="oPx-gv-Hq9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Z0y-ie-8bw" id="WRp-d1-NhG"/>
+                        <segue destination="qWP-Qq-1cA" kind="presentation" identifier="videoVC" id="jJK-Qz-LNJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="bKe-MC-Jam">
+            <objects>
+                <viewController id="qWP-Qq-1cA" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uNN-xM-dzF"/>
+                        <viewControllerLayoutGuide type="bottom" id="qwY-W6-rK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wa6-Vf-gMK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5OF-d4-d2f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="pFf-gv-6Ex"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photoshop Tutorial For Beginners How To Create a Logo Photoshop Tutorial For Beginners How To Create a Logo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-ec-0cR">
+                                <rect key="frame" x="16" y="289" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Kii-CL-3R3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBS-g5-GIe">
+                                <rect key="frame" x="16" y="358" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="obP-7H-dMd"/>
+                                </constraints>
+                                <string key="text">Learn how to make a professional logo in Photoshop without any design experience. This is a Photoshop tutorial for beginners that will give you all the basics of Photoshop that you need to make a logo.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cj-lP-kUy">
+                                <rect key="frame" x="16" y="594" width="343" height="53"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="cHc-8D-vjf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="qWP-Qq-1cA" eventType="touchUpInside" id="DP0-kL-al1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7cj-lP-kUy" firstAttribute="trailing" secondItem="wa6-Vf-gMK" secondAttribute="trailingMargin" id="1ap-C3-5Yi"/>
+                            <constraint firstItem="qwY-W6-rK3" firstAttribute="top" secondItem="7cj-lP-kUy" secondAttribute="bottom" constant="20" id="7I5-Uy-inB"/>
+                            <constraint firstItem="OBS-g5-GIe" firstAttribute="leading" secondItem="wa6-Vf-gMK" secondAttribute="leadingMargin" id="H6Z-1N-96V"/>
+                            <constraint firstItem="9aP-ec-0cR" firstAttribute="trailing" secondItem="wa6-Vf-gMK" secondAttribute="trailingMargin" id="Iok-CI-2ew"/>
+                            <constraint firstItem="7cj-lP-kUy" firstAttribute="leading" secondItem="wa6-Vf-gMK" secondAttribute="leadingMargin" id="KLm-s9-scs"/>
+                            <constraint firstItem="OBS-g5-GIe" firstAttribute="top" secondItem="9aP-ec-0cR" secondAttribute="bottom" constant="18" id="LjB-An-zvL"/>
+                            <constraint firstItem="5OF-d4-d2f" firstAttribute="leading" secondItem="wa6-Vf-gMK" secondAttribute="leading" id="VNf-A9-H2P"/>
+                            <constraint firstItem="OBS-g5-GIe" firstAttribute="trailing" secondItem="wa6-Vf-gMK" secondAttribute="trailingMargin" id="aDd-cJ-hX1"/>
+                            <constraint firstItem="9aP-ec-0cR" firstAttribute="leading" secondItem="wa6-Vf-gMK" secondAttribute="leadingMargin" id="guE-Ei-X7d"/>
+                            <constraint firstItem="9aP-ec-0cR" firstAttribute="top" secondItem="5OF-d4-d2f" secondAttribute="bottom" constant="15" id="krW-gG-tUv"/>
+                            <constraint firstAttribute="trailing" secondItem="5OF-d4-d2f" secondAttribute="trailing" id="uM4-69-Cjg"/>
+                            <constraint firstItem="5OF-d4-d2f" firstAttribute="top" secondItem="wa6-Vf-gMK" secondAttribute="top" id="x0F-Ic-0yH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="OBS-g5-GIe" id="CPD-zH-33E"/>
+                        <outlet property="titleLbl" destination="9aP-ec-0cR" id="WK6-Ng-413"/>
+                        <outlet property="webView" destination="5OF-d4-d2f" id="L78-8n-oBI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5A2-U1-FL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="37"/>
+        </scene>
+    </scenes>
+</document>
